@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldChangers - Resource Directory</title>
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav-shell">
+        <a href="../index.html#home" class="brand">
+            <span class="brand-mark"><i class='bx bxs-leaf'></i></span>
+            <span>WorldChangers</span>
+        </a>
+
+        <div class="nav-links" id="site-menu">
+            <a href="../index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#" class="active">Resources</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="../index.html#videos">Videos</a>
+            <a href="../index.html#contribute">Contribute</a>
+        </div>
+
+        <div class="nav-actions">
+            <span class="pill"><i class='bx bx-phone'></i> +256 761 504 634</span>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"><i class='bx bx-menu'></i></button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="page-hero surface reveal">
+        <span class="section-eyebrow">Resource Directory</span>
+        <h1>Project documentation and sustainability guides you can use today.</h1>
+        <p>These references collect our practical experiments and build notes. Explore, replicate, and improve them with your own local context.</p>
+    </section>
+
+    <section class="section reveal">
+        <div class="resource-list">
+            <article class="resource-item surface">
+                <h3><a href="https://drive.google.com/file/d/1HA-Ssyb5ThfsLBU3xYzBx45BFzz9SV_R/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Calculator App</a></h3>
+                <p>An early software prototype focused on simple arithmetic operations and clean usability for beginners.</p>
+            </article>
+
+            <article class="resource-item surface">
+                <h3><a href="https://drive.google.com/file/d/1eA24biaHpA0HwfAe_dUTbAhazM80h9Qr/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Taxes Calculator App - Simple</a></h3>
+                <p>A straightforward calculator concept for handling core tax computations with room for local adaptation.</p>
+            </article>
+
+            <article class="resource-item surface">
+                <h3><a href="https://drive.google.com/file/d/1AIvILj-HB42vs1l1bHPOWOf8ZlCh5xxn/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Plastic Bottle Broom</a></h3>
+                <p>An upcycling project showing how waste bottles can be transformed into durable household cleaning tools.</p>
+            </article>
+
+            <article class="resource-item surface">
+                <h3><a href="https://drive.google.com/file/d/1j_gNtuYA5gFUmIkpgVTWWVvNDByvb3Sr/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Eco-Friendly Planter from Plastic Bottles</a></h3>
+                <p>A practical reuse guide for converting discarded bottles into planters for herbs and small home gardens.</p>
+            </article>
+
+            <article class="resource-item surface">
+                <h3><a href="https://drive.google.com/file/d/1CmFEkBrOX8k4zqk2slEuBPcICgriE3I3/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Recycled Bottle Trash Can</a></h3>
+                <p>A low-cost approach to creating useful waste bins from recycled materials and minimizing plastic leakage.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section reveal" id="submit-idea">
+        <div class="form-shell surface">
+            <div class="form-info">
+                <span class="section-eyebrow">Share a Build</span>
+                <h3>Have a project we should feature?</h3>
+                <p>Tell us what you built, how it works, and why it matters. We highlight submissions that are practical and replicable.</p>
+            </div>
+
+            <form netlify name="resource-idea" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="resource-idea">
+
+                <label for="resource_name">Name</label>
+                <input id="resource_name" name="name" type="text" required>
+
+                <label for="resource_email">Email</label>
+                <input id="resource_email" name="email" type="email" required>
+
+                <label for="resource_idea">Project title</label>
+                <input id="resource_idea" name="idea" type="text" required>
+
+                <label for="resource_description">How does it operate?</label>
+                <textarea id="resource_description" name="idea_description" required></textarea>
+
+                <button class="btn btn-primary" type="submit">Submit Project</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-shell">
+        <section>
+            <h4>WorldChangers</h4>
+            <p>Practical sustainability for people, schools, and communities.</p>
+        </section>
+
+        <section>
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resource directory.html">Resources</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Support</h4>
+            <ul>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="../index.html#contribute">Contribute</a></li>
+                <li><a href="../index.html#videos">Videos</a></li>
+            </ul>
+        </section>
+    </div>
+    <p class="footer-meta">&copy; <span id="year"></span> WorldChangers Inc. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
